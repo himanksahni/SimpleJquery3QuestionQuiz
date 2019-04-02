@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="jQuery.js"></script>
+
+    <link rel="stylesheet" href="./css/node_modules/bulma/css/bulma.css">
+    <title></title>
+</head>
+
+<body>
+
+
+    <div class="container is-widescreen gameScreen">
+
+        <div class="box co">
+            <h1 class="question is-size-1-widescreen is-size-3-mobile is-size-2-tablet has-text-centered"></h1>
+        </div>
+
+
+        <div class="columns is-3">
+
+
+            <div class="column answer1 has-background-grey-light has-text-centered has-text-black columnHover option1">
+
+                First column
+            </div>
+            <div class="column has-background-success has-text-centered has-text-black option1 or1">
+                Second column
+            </div>
+            <div class="column has-background-danger has-text-centered has-text-black option1 ow1">
+                Second column
+            </div>
+
+
+            <div class="column answer2 has-background-grey-light has-text-centered has-text-black option2">
+                Second column
+            </div>
+            <div class="column has-background-success has-text-centered has-text-black option2 or2">
+                Second column
+            </div>
+            <div class="column has-background-danger has-text-centered has-text-black option2 ow2">
+                Second column
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column answer3 has-background-grey-light has-text-centered has-text-black option3">
+                First column
+            </div>
+            <div class="column has-background-success has-text-centered has-text-black option3 or3">
+                Second column
+            </div>
+            <div class="column has-background-danger has-text-centered has-text-black option3 ow3">
+                Second column
+            </div>
+
+
+
+
+            <div class="column answer4 has-background-grey-light has-text-centered has-text-black option4">
+                Second column
+            </div>
+            <div class="column has-background-success has-text-centered has-text-black option2 or4">
+                Second column
+            </div>
+            <div class="column has-background-danger has-text-centered has-text-black option4 ow4">
+                Second column
+            </div>
+        </div>
+        
+        <div class="columns restartColumn addClassForJs">
+            <div class="column has-text-centered">
+                <a class="button is-medium is-info restartBtn">Restart</a>
+            </div>
+            <div class="column has-text-centered nextQuestionColumn">
+                <a class="button is-medium is-info nextQuestionBtn">Next Question</a>
+            </div>
+
+        </div>
+        
+        <h1 class="title">Score:<span class="title score">  0</span></h1>
+        <h1 class="title">Level Completed:<span class="title lev">  0</span></h1>
+        
+        
+        
+
+        <progress class="progress is-primary prog1" value="0" max="100">0%</progress>
+        <progress class="progress is-primary prog2" value="33" max="100">33.33%</progress>
+        <progress class="progress is-primary prog3" value="66.66" max="100">66.66%</progress>
+        <progress class="progress is-primary prog4" value="100" max="100">100%</progress>
+
+    </div>
+    
+    <div class="container is-widescreen endGame has-text-centered" style="display: none !important">
+       
+       <h1 class="title is-1 has-text-centered has-text-danger">GAME FINISHED!</h1>
+       <h1 class="title  has-text-centered">Score:<span class="title score">  0</span></h1>
+       <a class="button is-large is-info restartBtn has-text-centered">Restart</a><br><br><br>
+       <progress class="progress is-primary prog4" value="100" max="100">100%</progress>
+       
+        
+        
+        
+    </div>
+    
+    <div class="container">
+        
+        <h5>Note: if option turns RED it's a wrong answer and if it turns GREEN it's a right answer</h5> 
+    </div>
+    <script src="./jQuery/main.js"></script>
+</body></html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
